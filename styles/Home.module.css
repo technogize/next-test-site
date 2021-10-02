@@ -1,0 +1,22 @@
+.title {
+  color: #333;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.text {
+  color: rgb(66, 61, 61);
+}
+.btn {
+  display: block;
+  width: 150px;
+  padding: 8px 0;
+  margin: 20px auto;
+  background: rgb(46, 46, 46);
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+}
+
+.btn:hover {
+  background: rgb(117, 117, 117);
+}

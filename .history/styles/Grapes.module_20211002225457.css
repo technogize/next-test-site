@@ -1,0 +1,9 @@
+.list,
+.listFarms {
+    list-style: none;
+    padding-left: 0;
+}
+
+.listFarms li {
+    border-bottom: 1px solid #ccc;
+}

@@ -1,0 +1,21 @@
+.list,
+.listFarms {
+    list-style: none;
+    padding-left: 0;
+}
+
+.listFarms li {
+    padding: 15px 0;
+    transition: 1s all;
+    border-bottom: 1px solid purple;
+    cursor: pointer;
+}
+
+.listFarms li:first-child {
+    border-top: 1px solid purple;
+}
+
+.listFarms li:hover {
+    background-color: rgb(255, 225, 255);
+    color: purple;
+}
