@@ -10,12 +10,16 @@ const scan = () => {
         const qrScanner = new QrScanner(
             videoElem.current,
             result => {
-                console.log('decoded qr code:', result)
                 setQrCodeData(result)
             }
         )
     
         qrScanner.start()
+
+        return () => {
+            // On unmount...
+            qrScanner.stop() // stop camera
+        }
     }, [])
     return (
         <div>
