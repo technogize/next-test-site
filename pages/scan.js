@@ -1,12 +1,12 @@
 import {useRef, useEffect, useState} from 'react'
 import QrScanner from 'qr-scanner'
+import styles from '../styles/Scan.module.css'
 
 const scan = () => {
     const videoElem = useRef()
     const [qrCodeData, setQrCodeData] = useState(null)
     
     useEffect(() => {
-        console.log('videoElem', videoElem)
         const qrScanner = new QrScanner(
             videoElem.current,
             result => {
@@ -20,8 +20,8 @@ const scan = () => {
     return (
         <div>
             <p>Please allow access to your device camera to be able to scan.</p>
-            <p>QR Code text data here: <strong>{qrCodeData}</strong></p>
-            <video ref={videoElem}></video>
+            <p>QR Code text data here: <strong className={styles.codeData}>{qrCodeData}</strong></p>
+            <video ref={videoElem} className={styles.scannerVideo}></video>
         </div>
     )
 }

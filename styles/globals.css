@@ -17,11 +17,9 @@ a {
   text-align: center;
 }
 nav {
+  text-align: center;
   margin: 10px auto 80px;
   padding: 10px 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
   border-bottom: 1px solid #ddd;
 }
 nav a {
@@ -32,9 +30,10 @@ nav a:hover {
   background-color: #ddd;
 }
 nav .logo {
-  margin-right: auto;
   cursor: pointer;
   display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 nav .logo img {
   height: 70px;
@@ -46,4 +45,21 @@ footer {
   margin-top: 60px;
   color: #777;
   border-top: 1px solid #eaeaea;
+}
+
+@media only screen and (min-width: 600px) {
+  nav {
+    margin: 10px auto 80px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-bottom: 1px solid #ddd;
+  }
+
+  nav .logo {
+    margin-right: auto;
+    justify-content: initial;
+    margin-bottom: 0;
+  }
 }
