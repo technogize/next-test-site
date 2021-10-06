@@ -17,7 +17,7 @@ const NotFound = () => {
     return (
         <>
             <Head>
-                <title>Page Not Found 🤔 | 🍇🌎 Grapeworld NextJS Site</title>
+                <title>Page Not Found 🤔 | 🍇🌎 Fruits NextJS Site</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>   
             <div className={styles.content}>

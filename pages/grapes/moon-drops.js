@@ -5,7 +5,7 @@ const MoonDrops = () => {
     return (
         <>
             <Head>
-                <title>Moon Drops | 🍇🌎 Grapeworld NextJS Site</title>
+                <title>Moon Drops | 🍇🌎 Fruits NextJS Site</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div>

@@ -19,7 +19,7 @@ const index = props => {
     return (
         <>
             <Head>
-                <title>Grapes | 🍇🌎 Grapeworld NextJS Site</title>
+                <title>Grapes | 🍇🌎 Fruits NextJS Site</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div>

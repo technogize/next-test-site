@@ -12,11 +12,12 @@ const Navbar = () => {
                         width={60}
                         height={70}
                     />
-                    <h1>Grapes</h1>
+                    <h1>Fruits</h1>
                 </div>
             </Link>
             <div className='nav-main-menu'>
                 <Link href="/">Home</Link>
+                <Link href="/products">Products</Link>
                 <Link href="/grapes">Grapes</Link>
                 <Link href="/about">About</Link>
                 <Link href="/scan">Scan</Link>

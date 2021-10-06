@@ -5,7 +5,7 @@ const Concord = () => {
     return (
         <>
             <Head>
-                <title>Concord | 🍇🌎 Grapeworld NextJS Site</title>
+                <title>Concord | 🍇🌎 Fruits NextJS Site</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div>

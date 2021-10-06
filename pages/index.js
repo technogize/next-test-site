@@ -1,18 +1,19 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+const Home = ({ products }) => {
+  console.log(products)
   return (
     <div className={styles.container}>
       <Head>
-        <title>Home | 🍇🌎 Grapeworld NextJS Site</title>
+        <title>Home | 🍇🌎 Fruits NextJS Site</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>      
       <main className={styles.main}>
         <h1 className={styles.title}>
-          🍇 Grapes! 🌎
+          🍇🍓 Fruit! 🍏🍐
         </h1>
-        <p>I love crunchy grapes, straight from the fridge. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi voluptatum unde eum nihil at ab magni cum officiis esse labore natus porro odit, earum sapiente modi pariatur magnam? Officia, nulla!</p>
+        <p>Fruits. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi voluptatum unde eum nihil at ab magni cum officiis esse labore natus porro odit, earum sapiente modi pariatur magnam? Officia, nulla!</p>
         <p>My first programming language was Pascal, which I learnt at Barnfield College, Luton.</p>
         <code className={styles.code}>
           writeln ('Hello, world.');
@@ -21,3 +22,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home
