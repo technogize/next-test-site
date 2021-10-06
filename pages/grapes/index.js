@@ -4,7 +4,6 @@ import Head from 'next/head'
 import styles from '../../styles/Grapes.module.css'
 
 export const getStaticProps = async (context) => {
-    console.log('context:::', context)
     // https://jsonplaceholder.typicode.com/users
     const resp = await fetch('https://jsonplaceholder.typicode.com/users')
     const data = await resp.json()

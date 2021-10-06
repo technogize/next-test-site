@@ -1,0 +1,8 @@
+.images {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    padding: 0 5px;
+}

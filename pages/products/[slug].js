@@ -1,6 +1,7 @@
 import { createClient } from 'contentful'
 import Head from 'next/head'
-
+import Image from 'next/image'
+import styles from '../../styles/ProductDetailsPage.module.css'
 const contentfulClient = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
@@ -41,7 +42,7 @@ const ProductDetails = props => {
 
     if (!product) return <div>Nothing...</div>
     
-    const { title, description } = product.fields
+    const { title, description, id, images } = product.fields
     return (
       <>
         <Head>
@@ -49,7 +50,22 @@ const ProductDetails = props => {
         </Head>
         <div>
           <h1>{title}</h1>
+          <div className={styles.images}>
+            {
+              images.map(image => {
+                return (
+                  <div key={image.sys.id} className={styles.image}>
+                    <Image src={`https:${image.fields.file.url}`} height={100} width={100} />
+                  </div>
+                )
+              })
+            }
+          </div>
           <div>
+            <p>
+              <strong>EVRYTHNG ID: {id}</strong><br />
+              This can be used to query EVRYTHNG for the product data.
+            </p>
             {description}
           </div>
         </div>

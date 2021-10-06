@@ -6,7 +6,7 @@ import styles from '../styles/ProductCard.module.css'
 const ProductCard = props => {
     const { product } = props
     const { images, slug, title } = product.fields
-    console.log(product)
+    
     return (
         <Link href={`/products/${slug}`}>
             <div className={styles.productCard}>
